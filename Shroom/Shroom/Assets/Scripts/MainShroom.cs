@@ -6,6 +6,7 @@ public class MainShroom : MonoBehaviour
 {
     public float MaxHealth = 100;
     public float CurrentHealth;
+    public int dmgToDo;
 
     // Start is called before the first frame update
     void Start()
@@ -17,5 +18,11 @@ public class MainShroom : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        if (other.gameObject.tag == "enemy") {
+            other.GetComponent<EnemyProperties>().enemyHealth -= dmgToDo;
+        }
     }
 }
