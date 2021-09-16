@@ -19,7 +19,7 @@ public class EnemyScript : MonoBehaviour
         Vector3 direction = target.position - transform.position;
         transform.Translate(direction.normalized * speed * Time.deltaTime);
 
-        if (Vector3.Distance(transform.position, target.position) <= 0.2f)
+        if (Vector3.Distance(transform.position, target.position) <= 0.6f)
         {
             NextWaypoint();
         }
@@ -28,6 +28,7 @@ public class EnemyScript : MonoBehaviour
     {
         if (wavepointIndex >= WaypointScript.points.Length - 1)
         {
+            WaveSpawner.EnemiesAlive--;
             Destroy(gameObject);
             return;
         }
