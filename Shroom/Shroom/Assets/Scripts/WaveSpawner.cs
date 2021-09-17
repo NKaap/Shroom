@@ -13,6 +13,10 @@ public class WaveSpawner : MonoBehaviour
     public float countdown;
     public Text waveCountdownText;
 
+    //Wavecounter
+    public int waveCounterInt;
+    public Text waveCounterText;
+
     private int WaveIndex = 0;
     
     void Update()
@@ -40,6 +44,10 @@ public class WaveSpawner : MonoBehaviour
 
     IEnumerator SpawnWave()
     {
+        waveCounterInt++;
+
+        waveCounterText.text = waveCounterInt.ToString();
+
         Wave wave = waves[WaveIndex];
 
         for (int i = 0; i < wave.count; i++)
