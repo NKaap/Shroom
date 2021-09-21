@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainShroom : MonoBehaviour
+public class Towers : MonoBehaviour
 {
     public float MaxHealth = 100;
     public float CurrentHealth;

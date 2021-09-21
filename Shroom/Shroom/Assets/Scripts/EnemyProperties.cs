@@ -6,6 +6,7 @@ public class EnemyProperties : MonoBehaviour
 {
     public int enemyHealth;
     public GameObject enemy;
+    public float moneyWhenKilled;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,7 @@ public class EnemyProperties : MonoBehaviour
     {
         if(enemyHealth <= 0) {
             Destroy(enemy);
+            GetComponent<ShopController>().money += moneyWhenKilled;
         }
     }
 }
