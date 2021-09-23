@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class ShopController : MonoBehaviour
+public class Bomb : MonoBehaviour
 {
-    //Money and text for your Towers
-    public Text moneyText;
-    public float money;
+    public int bombHealth;
+    public int bombDamage;
+    public int bombCosts;
 
     // Start is called before the first frame update
     void Start()
@@ -18,8 +17,6 @@ public class ShopController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Weergave van geld op je scherm
-        moneyText.text = money.ToString();
-
+        
     }
 }
