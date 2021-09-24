@@ -2117,11 +2117,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4993658031270948104, guid: b82685dabc52ef64fbc75ddcbd19a04e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5517295165099588904, guid: b82685dabc52ef64fbc75ddcbd19a04e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5517295166841783065, guid: b82685dabc52ef64fbc75ddcbd19a04e, type: 3}
       propertyPath: m_RootOrder
