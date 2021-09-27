@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class Towers : MonoBehaviour
 {
-    public float MaxHealth = 100;
-    public float CurrentHealth;
+    [SerializeField] private Animator animationController;
+
+    public float maxHealth = 100;
+    public float currentHealth;
     public int dmgToDo;
+    public bool canAttack;
 
     // Start is called before the first frame update
     void Start()
@@ -17,12 +20,18 @@ public class Towers : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.tag == "enemy") {
-            other.GetComponent<EnemyProperties>().enemyHealth -= dmgToDo;
+            animationController.SetBool("Attack", true);
+            GetComponent<EnemyProperties>().enemyHealth -= dmgToDo;
         }
     }
+    private void OnTriggerExit(Collider other) {
+        if (other.gameObject.tag == "enemy") {
+            animationController.SetBool("Attack", false);
+        }
+    }
+
 }

@@ -22772,9 +22772,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1517237663781475051, guid: 83453affa4a6c894fab3c8250a86af93, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1517237663781475051, guid: 83453affa4a6c894fab3c8250a86af93, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: eca966cca282b81499b8a038da4a3de6, type: 2}
+    - target: {fileID: 4539793846023023111, guid: 83453affa4a6c894fab3c8250a86af93, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6819910047438716567, guid: 83453affa4a6c894fab3c8250a86af93, type: 3}
       propertyPath: m_Controller
       value: 
@@ -22847,5 +22855,9 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: eca966cca282b81499b8a038da4a3de6, type: 2}
+    - target: {fileID: 6819910049370269378, guid: 83453affa4a6c894fab3c8250a86af93, type: 3}
+      propertyPath: m_CullingMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83453affa4a6c894fab3c8250a86af93, type: 3}
