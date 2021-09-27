@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+public class mainmenu : MonoBehaviour
 {
     public Transform[] targets;
     public float speed;
@@ -12,7 +12,7 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(transform.position, targets[index].position) < 0.4)
+        if (Vector3.Distance(transform.position, targets[index].position) < 0.1)
 
         {
             index += 1;

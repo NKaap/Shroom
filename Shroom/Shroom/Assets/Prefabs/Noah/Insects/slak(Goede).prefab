@@ -538,7 +538,7 @@ GameObject:
   - component: {fileID: 7041704763361430790}
   - component: {fileID: 7364388493659549655}
   - component: {fileID: 4193726404589847130}
-  - component: {fileID: 3399975331473473176}
+  - component: {fileID: 4218217943262607468}
   m_Layer: 0
   m_Name: slak(Goede)
   m_TagString: enemy
@@ -594,8 +594,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
---- !u!64 &3399975331473473176
-MeshCollider:
+--- !u!65 &4218217943262607468
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -604,10 +604,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5495902117074765545, guid: 3fc1f9d4cdd4d274ea70b0ba8218d1c7, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7908307601239758985
 GameObject:
   m_ObjectHideFlags: 0
