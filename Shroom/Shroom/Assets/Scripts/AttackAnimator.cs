@@ -21,11 +21,12 @@ public class AttackAnimator : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("enemy"))
+        Debug.Log("Kinda works");
+        if(other.gameObject.tag == "enemy")
         {
-            mushroom.GetComponent<Animator>().SetTrigger("Attack");
+            Debug.Log("Fakka Neef");
+            animator.SetBool("Attack1", true);
         }
-            
     }
 
 
