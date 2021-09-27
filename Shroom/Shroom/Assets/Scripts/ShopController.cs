@@ -62,46 +62,63 @@ public class ShopController : MonoBehaviour
 
 
 
-    public void Shoot()
-    {
-        if (money >= towers[0].GetComponent<Shooter>().shooterCosts)
-        {
-            money -= towers[0].GetComponent<Shooter>().shooterCosts;
-            Debug.Log("Spawned");
-            Instantiate(towers[0], raycastHitPostion, Quaternion.identity);
-            shopCanvas.SetActive(false);
-        }
-    }
-
     public void Punch()
     {
-        if (GetComponent<ShopController>().money >= GetComponent<Punch>().punchCosts)
+        if (money >= towers[0].GetComponent<Punch>().punchCosts)
         {
-            Instantiate(towers[1], this.gameObject.transform);
-        }
-    }
-
-    public void Spray()
-    {
-        if (GetComponent<ShopController>().money >= GetComponent<Spray>().sprayCosts)
-        {
-            Instantiate(towers[2], this.gameObject.transform);
+            money -= towers[0].GetComponent<Punch>().punchCosts;
+            Debug.Log("Punch Spawned");
+            Instantiate(towers[0], raycastHitPostion, Quaternion.identity);
+            shopCanvas.SetActive(false);
+            Destroy(signRaycast);
         }
     }
 
     public void Jump()
     {
-        if (GetComponent<ShopController>().money >= GetComponent<Jump>().jumpCosts)
+        if (money >= towers[1].GetComponent<Jump>().jumpCosts)
         {
-            Instantiate(towers[3], this.gameObject.transform);
+            money -= towers[1].GetComponent<Jump>().jumpCosts;
+            Debug.Log("Jump Spawned");
+            Instantiate(towers[1], raycastHitPostion, Quaternion.identity);
+            shopCanvas.SetActive(false);
+            Destroy(signRaycast);
+        }
+    }
+
+    public void Shoot()
+    {
+        if (money >= towers[2].GetComponent<Shooter>().shooterCosts)
+        {
+            money -= towers[2].GetComponent<Shooter>().shooterCosts;
+            Debug.Log("Shoot Spawned");
+            Instantiate(towers[2], raycastHitPostion, Quaternion.identity);
+            shopCanvas.SetActive(false);
+            Destroy(signRaycast);
+        }
+    }
+
+    public void Spray()
+    {
+        if (money >= towers[3].GetComponent<Spray>().sprayCosts)
+        {
+            money -= towers[3].GetComponent<Spray>().sprayCosts;
+            Debug.Log("Spray Spawned");
+            Instantiate(towers[3], raycastHitPostion, Quaternion.identity);
+            shopCanvas.SetActive(false);
+            Destroy(signRaycast);
         }
     }
 
     public void Bomb()
     {
-        if (GetComponent<ShopController>().money >= GetComponent<Bomb>().bombCosts)
+        if (money >= towers[4].GetComponent<Bomb>().bombCosts)
         {
-            Instantiate(towers[4], this.gameObject.transform);
+            money -= towers[4].GetComponent<Bomb>().bombCosts;
+            Debug.Log("Bomb Spawned");
+            Instantiate(towers[4], raycastHitPostion, Quaternion.identity);
+            shopCanvas.SetActive(false);
+            Destroy(signRaycast);
         }
     }
 

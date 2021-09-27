@@ -2268,7 +2268,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 271632158}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 586301190}
+        m_TargetAssemblyTypeName: ShopController, Assembly-CSharp
+        m_MethodName: Bomb
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &271632158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2843,7 +2855,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 350492875}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 586301190}
+        m_TargetAssemblyTypeName: ShopController, Assembly-CSharp
+        m_MethodName: Jump
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &350492875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4127,11 +4151,11 @@ MonoBehaviour:
   shopCanvas: {fileID: 970253455}
   signRaycast: {fileID: 0}
   towers:
-  - {fileID: 3861664372756099404, guid: 1e281017610ccb2499ca668d93026be1, type: 3}
-  - {fileID: 3861664372756099404, guid: 1e281017610ccb2499ca668d93026be1, type: 3}
-  - {fileID: 3861664372756099404, guid: 1e281017610ccb2499ca668d93026be1, type: 3}
-  - {fileID: 3861664372756099404, guid: 1e281017610ccb2499ca668d93026be1, type: 3}
-  - {fileID: 3861664372756099404, guid: 1e281017610ccb2499ca668d93026be1, type: 3}
+  - {fileID: 3861664372756099404, guid: 1647146867c8af446a6318e75a375964, type: 3}
+  - {fileID: 3861664372756099404, guid: 1647146867c8af446a6318e75a375964, type: 3}
+  - {fileID: 3861664372756099404, guid: 1647146867c8af446a6318e75a375964, type: 3}
+  - {fileID: 3861664372756099404, guid: 1647146867c8af446a6318e75a375964, type: 3}
+  - {fileID: 3861664372756099404, guid: 1647146867c8af446a6318e75a375964, type: 3}
 --- !u!1 &615032383
 GameObject:
   m_ObjectHideFlags: 0
@@ -7202,7 +7226,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &970253456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7585,7 +7609,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 993354247}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 586301190}
+        m_TargetAssemblyTypeName: ShopController, Assembly-CSharp
+        m_MethodName: Shoot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &993354247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9062,19 +9098,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 586301190}
         m_TargetAssemblyTypeName: ShopController, Assembly-CSharp
-        m_MethodName: Shoot
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 586301190}
-        m_TargetAssemblyTypeName: ShopController, Assembly-CSharp
-        m_MethodName: DestroySign
+        m_MethodName: Punch
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9204,7 +9228,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1204418767}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 586301190}
+        m_TargetAssemblyTypeName: ShopController, Assembly-CSharp
+        m_MethodName: Spray
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1204418767
 MonoBehaviour:
   m_ObjectHideFlags: 0
