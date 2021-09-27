@@ -410,6 +410,7 @@ GameObject:
   - component: {fileID: 2411936347873328477}
   - component: {fileID: 2806395855062450185}
   - component: {fileID: 5449921699101343513}
+  - component: {fileID: 1967020906727440647}
   m_Layer: 0
   m_Name: Ant2
   m_TagString: enemy
@@ -443,7 +444,7 @@ Animator:
   m_GameObject: {fileID: 3040840113122174951}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 60b095e90f39c4b41ae13bfbf66a46c8, type: 2}
+  m_Controller: {fileID: 9100000, guid: 27672d210b5f5da4dbf3ddd1f466f650, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -465,6 +466,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+--- !u!64 &1967020906727440647
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040840113122174951}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5495902117074765545, guid: 5bec4e7d082228a489a2988121843969, type: 3}
 --- !u!1 &3143325252070455631
 GameObject:
   m_ObjectHideFlags: 0

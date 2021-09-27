@@ -26,6 +26,9 @@ public class AttackAnimator : MonoBehaviour
         {
             Debug.Log("Fakka Neef");
             animator.SetBool("Attack1", true);
+            Destroy(other.gameObject);
+            WaveSpawner.EnemiesAlive--;
+            return;
         }
     }
 
