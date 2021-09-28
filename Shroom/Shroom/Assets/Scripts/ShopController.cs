@@ -7,7 +7,8 @@ public class ShopController : MonoBehaviour
     //Money and text for your Towers
     [Header("Health")]  
     public Text moneyText;
-    public int money = 100;
+    public Text moneyTextUI;
+    public int money = 100000000;
 
     //Needed for Shop
     [Header("Raycast Settings")]
@@ -15,10 +16,16 @@ public class ShopController : MonoBehaviour
     public GameObject shopCanvas;
     public GameObject signRaycast;
     public RaycastHit raycastHit;
+    public GameObject moneyGameUI;
 
     //Towers
     [Header("Towers")]
     public GameObject[] towers;
+
+    //Enemies ++ Money
+    [Header("Enemies")]
+    public GameObject[] enemies;
+    public int[] enemiesPlusMoney;
 
     // Start is called before the first frame update
     void Start()
@@ -29,8 +36,18 @@ public class ShopController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(shopCanvas.activeInHierarchy == true)
+        {
+            moneyGameUI.SetActive(false);
+        }
+        else
+        {
+            moneyGameUI.SetActive(true);
+        }
         //Weergave van geld op je scherm
         moneyText.text = money.ToString();
+
+        moneyTextUI.text = moneyText.text;
         //Check for mouse click 
         if (Input.GetMouseButtonDown(0))
         {
@@ -57,6 +74,7 @@ public class ShopController : MonoBehaviour
         if (gameObject.tag == "Sign")
         {
             shopCanvas.SetActive(true);
+            moneyGameUI.SetActive(false);
         }
     }
 
@@ -71,6 +89,7 @@ public class ShopController : MonoBehaviour
             Instantiate(towers[0], raycastHitPostion, Quaternion.identity);
             shopCanvas.SetActive(false);
             Destroy(signRaycast);
+            moneyGameUI.SetActive(true);
         }
     }
 
@@ -83,6 +102,7 @@ public class ShopController : MonoBehaviour
             Instantiate(towers[1], raycastHitPostion, Quaternion.identity);
             shopCanvas.SetActive(false);
             Destroy(signRaycast);
+            moneyGameUI.SetActive(true);
         }
     }
 
@@ -95,6 +115,7 @@ public class ShopController : MonoBehaviour
             Instantiate(towers[2], raycastHitPostion, Quaternion.identity);
             shopCanvas.SetActive(false);
             Destroy(signRaycast);
+            moneyGameUI.SetActive(true);
         }
     }
 
@@ -107,6 +128,7 @@ public class ShopController : MonoBehaviour
             Instantiate(towers[3], raycastHitPostion, Quaternion.identity);
             shopCanvas.SetActive(false);
             Destroy(signRaycast);
+            moneyGameUI.SetActive(true);
         }
     }
 
@@ -119,6 +141,7 @@ public class ShopController : MonoBehaviour
             Instantiate(towers[4], raycastHitPostion, Quaternion.identity);
             shopCanvas.SetActive(false);
             Destroy(signRaycast);
+            moneyGameUI.SetActive(true);
         }
     }
 
