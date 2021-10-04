@@ -4,34 +4,38 @@ using UnityEngine;
 
 public class EnemyScript : MonoBehaviour
 {
-    public float speed = 10f;
+    public float speed;
 
-    private Transform target;
-    private int wavepointIndex;
-    // Start is called before the first frame update
-    void Start()
+    public Transform target;
+    private int waypointindex = 0;
+
+    private void Start()
     {
         target = WaypointScript.points[0];
     }
-
     void Update()
     {
-        Vector3 direction = target.position - transform.position;
-        transform.Translate(direction.normalized * speed * Time.deltaTime);
-        if (Vector3.Distance(transform.position, target.position) <= 0.6f)
+        Vector3 dir = target.position - transform.position;
+        transform.Translate(dir.normalized * speed * Time.deltaTime);
+
+        if (Vector3.Distance(transform.position, target.position) <= 0.5f)
         {
-            NextWaypoint();
+            GetNextWaypoint();
         }
     }
-    void NextWaypoint()
+    void GetNextWaypoint()
     {
-        if (wavepointIndex >= WaypointScript.points.Length - 1)
+        if (waypointindex >= WaypointScript.points.Length - 1)
         {
-            WaveSpawner.EnemiesAlive--;
-            Destroy(gameObject);
+            EndPath();
             return;
         }
-        wavepointIndex++;
-        target = WaypointScript.points[wavepointIndex];
+        waypointindex++;
+        target = WaypointScript.points[waypointindex];
+    }
+    void EndPath()
+    {
+        WaveSpawner.EnemiesAlive--;
+        Destroy(gameObject);
     }
 }

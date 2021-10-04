@@ -227,10 +227,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1309193826995201344}
   - component: {fileID: 1558678283893310125}
-  - component: {fileID: 1565347922605945773}
   - component: {fileID: 6340943451608630106}
   - component: {fileID: 5305801768607297565}
   - component: {fileID: 8526818188341709016}
+  - component: {fileID: 8035039972947684142}
   m_Layer: 0
   m_Name: Beetle(Animation)
   m_TagString: enemy
@@ -273,19 +273,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1565347922605945773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828708245898706938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfd1cdc6f95e87447a1887d2191a7a76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
 --- !u!65 &6340943451608630106
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -330,6 +317,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8035039972947684142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828708245898706938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce0aff02eab3a82409d506c13b374cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &2144084684191968126
 GameObject:
   m_ObjectHideFlags: 0

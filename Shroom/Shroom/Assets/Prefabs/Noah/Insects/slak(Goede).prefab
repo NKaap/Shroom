@@ -537,9 +537,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7041704763361430790}
   - component: {fileID: 7364388493659549655}
-  - component: {fileID: 4193726404589847130}
   - component: {fileID: 4218217943262607468}
   - component: {fileID: 3242765173642173333}
+  - component: {fileID: 3963629619740855273}
   m_Layer: 0
   m_Name: slak(Goede)
   m_TagString: enemy
@@ -582,19 +582,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4193726404589847130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7706496244358961084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfd1cdc6f95e87447a1887d2191a7a76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
 --- !u!65 &4218217943262607468
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -624,6 +611,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3963629619740855273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7706496244358961084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce0aff02eab3a82409d506c13b374cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 7
 --- !u!1 &7908307601239758985
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+public class mainmenu : MonoBehaviour
 {
     public Transform[] targets;
     public float speed;

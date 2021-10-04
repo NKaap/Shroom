@@ -409,9 +409,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2411936347873328477}
   - component: {fileID: 2806395855062450185}
-  - component: {fileID: 5449921699101343513}
   - component: {fileID: -5384983071696082486}
   - component: {fileID: 5464680062721766274}
+  - component: {fileID: 7420863116068231964}
   m_Layer: 0
   m_Name: Ant2
   m_TagString: enemy
@@ -454,19 +454,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5449921699101343513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3040840113122174951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfd1cdc6f95e87447a1887d2191a7a76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
 --- !u!65 &-5384983071696082486
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -496,6 +483,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7420863116068231964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040840113122174951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce0aff02eab3a82409d506c13b374cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &3143325252070455631
 GameObject:
   m_ObjectHideFlags: 0

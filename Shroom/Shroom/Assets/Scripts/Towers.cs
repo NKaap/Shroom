@@ -24,13 +24,13 @@ public class Towers : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.tag == "enemy") {
-            animationController.SetBool("Attack", true);
+            animationController.SetBool("Attack1", true);
             GetComponent<EnemyProperties>().enemyHealth -= dmgToDo;
         }
     }
     private void OnTriggerExit(Collider other) {
         if (other.gameObject.tag == "enemy") {
-            animationController.SetBool("Attack", false);
+            animationController.SetBool("Attack1", false);
         }
     }
 
