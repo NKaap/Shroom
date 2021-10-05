@@ -624,7 +624,7 @@ MonoBehaviour:
   animationController: {fileID: 1242772569}
   maxHealth: 100
   currentHealth: 0
-  dmgToDo: 0
+  dmgToDo: 1
   canAttack: 0
 --- !u!65 &1242772571
 BoxCollider:

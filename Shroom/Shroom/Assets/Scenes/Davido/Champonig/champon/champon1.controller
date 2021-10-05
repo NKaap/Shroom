@@ -87,7 +87,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackEnemy: 0
+<<<<<<< Updated upstream
   tower: {fileID: 8916470853174365118, guid: 75aebe18acb76d64181e910999c89af7, type: 3}
+=======
+  dmgDone: 0
+  enemyProperties: {fileID: 0}
+  tower: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!1101 &-267637038445037156
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

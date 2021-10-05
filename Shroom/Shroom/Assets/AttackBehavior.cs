@@ -5,7 +5,11 @@ using UnityEngine;
 public class AttackBehavior : StateMachineBehaviour
 {
     public bool attackEnemy;
-    public GameObject tower;
+    //public GameObject tower;
+    public int dmgDone;
+
+    public EnemyProperties enemyProperties;
+    public Towers tower;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -21,7 +25,9 @@ public class AttackBehavior : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        tower.GetComponent<Towers>().canAttack = true;
+
+        tower.canAttack = true;
+        enemyProperties.enemyHealth -= tower.dmgToDo;
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
