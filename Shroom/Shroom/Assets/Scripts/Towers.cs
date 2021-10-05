@@ -25,7 +25,11 @@ public class Towers : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.tag == "enemy") {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             animationController.SetBool("Attack1", true);
+=======
+            animationController.SetBool("Attack", true);
+>>>>>>> Stashed changes
             GetComponent<EnemyProperties>().enemyHealth -= dmgToDo;
 =======
             animationController.SetBool("Attack", true);
@@ -35,7 +39,7 @@ public class Towers : MonoBehaviour
     }
     private void OnTriggerExit(Collider other) {
         if (other.gameObject.tag == "enemy") {
-            animationController.SetBool("Attack1", false);
+            animationController.SetBool("Attack", false);
         }
     }
 
