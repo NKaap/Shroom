@@ -24,17 +24,15 @@ public class Towers : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.tag == "enemy") {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-            animationController.SetBool("Attack1", true);
-=======
+
             animationController.SetBool("Attack", true);
->>>>>>> Stashed changes
+
+            
+
             GetComponent<EnemyProperties>().enemyHealth -= dmgToDo;
-=======
-            animationController.SetBool("Attack", true);
+
             //GetComponent<EnemyProperties>().enemyHealth -= dmgToDo;
->>>>>>> Stashed changes
+
         }
     }
     private void OnTriggerExit(Collider other) {

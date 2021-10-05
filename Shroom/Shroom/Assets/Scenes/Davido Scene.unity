@@ -836,6 +836,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8916470852616444221, guid: 75aebe18acb76d64181e910999c89af7, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4f16e7662bf7c6d4ab9cd1d53f96ae16, type: 2}
     - target: {fileID: 8916470853174365117, guid: 75aebe18acb76d64181e910999c89af7, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -888,7 +892,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 472424181601107128, guid: 75aebe18acb76d64181e910999c89af7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 75aebe18acb76d64181e910999c89af7, type: 3}
 --- !u!1 &8916470852895082996 stripped
 GameObject:
@@ -905,7 +910,7 @@ Animator:
   m_GameObject: {fileID: 8916470852895082996}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7cc17519b7e465c45b70b3657fe16a24, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4f16e7662bf7c6d4ab9cd1d53f96ae16, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -948,7 +953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8161803e68db143b4193d8fbd5a6b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationController: {fileID: 8916470852895083003}
+  animationController: {fileID: 8916470852895082997}
   maxHealth: 100
   currentHealth: 0
   dmgToDo: 0

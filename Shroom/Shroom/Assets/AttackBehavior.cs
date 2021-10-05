@@ -27,7 +27,7 @@ public class AttackBehavior : StateMachineBehaviour
     {
 
         tower.canAttack = true;
-        enemyProperties.enemyHealth -= tower.dmgToDo;
+       // enemyProperties.enemyHealth -= tower.dmgToDo;
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
