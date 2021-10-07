@@ -11,9 +11,24 @@ public class AttackBehavior : StateMachineBehaviour
     public EnemyProperties enemyProperties;
     public Towers tower;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
-    override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    {
-        
+    override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+
+        int iD = Animator.StringToHash("AD");
+
+        //Debug.Log(animator.GetCurrentAnimatorStateInfo(layerIndex).shortNameHash);
+        //Debug.Log(stateInfo.tag);
+        Debug.Log(iD.ToString() + ", " + stateInfo.nameHash.ToString());
+        if (stateInfo.IsTag("hoi")) {
+            Debug.Log("Starte");
+            if (tower.enemy == null) {
+                Debug.Log("Apply damge");
+                animator.SetTrigger("NoEnemy");
+                return;
+            }
+            Debug.Log("Doing damage");
+            tower.enemy.GetComponent<EnemyProperties>().enemyHealth -= dmgDone;
+            animator.SetTrigger("Applied dmg");
+        }
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -25,8 +40,7 @@ public class AttackBehavior : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-
-        tower.canAttack = true;
+        
        // enemyProperties.enemyHealth -= tower.dmgToDo;
     }
 

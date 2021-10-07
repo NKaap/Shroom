@@ -600,7 +600,7 @@ Animator:
   m_GameObject: {fileID: 1242772567}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7cc17519b7e465c45b70b3657fe16a24, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4f16e7662bf7c6d4ab9cd1d53f96ae16, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -626,6 +626,7 @@ MonoBehaviour:
   currentHealth: 0
   dmgToDo: 1
   canAttack: 0
+  enemy: {fileID: 0}
 --- !u!65 &1242772571
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -675,6 +676,7 @@ MonoBehaviour:
   currentHealth: 0
   dmgToDo: 5
   canAttack: 0
+  enemy: {fileID: 0}
 --- !u!65 &1379532968
 BoxCollider:
   m_ObjectHideFlags: 0

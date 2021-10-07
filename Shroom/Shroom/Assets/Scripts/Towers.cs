@@ -10,6 +10,7 @@ public class Towers : MonoBehaviour
     public float currentHealth;
     public int dmgToDo;
     public bool canAttack;
+    public Transform enemy;
 
     // Start is called before the first frame update
     void Start()
@@ -20,24 +21,24 @@ public class Towers : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
     }
 
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.tag == "enemy") {
-
+            enemy = other.transform;
             animationController.SetBool("Attack", true);
 
             
 
-            GetComponent<EnemyProperties>().enemyHealth -= dmgToDo;
 
             //GetComponent<EnemyProperties>().enemyHealth -= dmgToDo;
-
         }
     }
     private void OnTriggerExit(Collider other) {
         if (other.gameObject.tag == "enemy") {
             animationController.SetBool("Attack", false);
+            enemy = null;
         }
     }
 
