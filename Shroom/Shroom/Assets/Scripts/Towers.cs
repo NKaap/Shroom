@@ -8,38 +8,58 @@ public class Towers : MonoBehaviour
 
     public float maxHealth = 100;
     public float currentHealth;
+    public float attackCoolDown;
     public int dmgToDo;
     public bool canAttack;
     public Transform enemy;
+    public Animator animator;
+    public void EnemyDied() {
+            animationController.SetBool("Attack", false);
+            SetState(TowerState.Idle);
+    }
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    public enum TowerState {
+        Idle,
+        Attack,
+    }
+
+    void SetState(TowerState newTowerState) {
+        switch (newTowerState) {
+            case TowerState.Attack:
+            animationController.SetBool("DoDmg", true);
+            StartCoroutine(SetAttackToFalse());
+            break;
+            case TowerState.Idle:
+            animationController.SetBool("DoDmg", false);
+            break;
+        }
+    }
+
+    IEnumerator SetAttackToFalse() {
+        yield return new WaitForSeconds(attackCoolDown);
+        DoDamage();
+        SetState(TowerState.Attack);
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public virtual void DoDamage() {
+        enemy.gameObject.GetComponent<EnemyProperties>().DoDamage(dmgToDo);
+
     }
 
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.tag == "enemy") {
-            enemy = other.transform;
             animationController.SetBool("Attack", true);
-
-            
-
-
-            //GetComponent<EnemyProperties>().enemyHealth -= dmgToDo;
+            enemy = other.transform;
+            SetState(TowerState.Attack);
+            print("het werkt");
         }
     }
     private void OnTriggerExit(Collider other) {
         if (other.gameObject.tag == "enemy") {
             animationController.SetBool("Attack", false);
+            SetState(TowerState.Idle);
             enemy = null;
         }
     }
-
 }

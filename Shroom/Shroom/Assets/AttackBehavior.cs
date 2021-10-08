@@ -7,28 +7,42 @@ public class AttackBehavior : StateMachineBehaviour
     public bool attackEnemy;
     //public GameObject tower;
     public int dmgDone;
+    public float attackCoolDown;
 
     public EnemyProperties enemyProperties;
     public Towers tower;
+
+    private Animator animator;
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
-    override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+    override public void OnStateEnter(Animator newAnimator, AnimatorStateInfo stateInfo, int layerIndex) {
+        //animator = newAnimator;
+        //int iD = Animator.StringToHash("AD");
+        //tower.DoDamage();
+        //animator.SetBool("DoDmg", true);
+        //CoRoutineCreator.coRoutineCreator.StartCoroutine(SetAttackToFalse());
 
-        int iD = Animator.StringToHash("AD");
 
-        //Debug.Log(animator.GetCurrentAnimatorStateInfo(layerIndex).shortNameHash);
-        //Debug.Log(stateInfo.tag);
-        Debug.Log(iD.ToString() + ", " + stateInfo.nameHash.ToString());
-        if (stateInfo.IsTag("hoi")) {
-            Debug.Log("Starte");
-            if (tower.enemy == null) {
-                Debug.Log("Apply damge");
-                animator.SetTrigger("NoEnemy");
-                return;
-            }
-            Debug.Log("Doing damage");
-            tower.enemy.GetComponent<EnemyProperties>().enemyHealth -= dmgDone;
-            animator.SetTrigger("Applied dmg");
-        }
+
+
+        ////Debug.Log(animator.GetCurrentAnimatorStateInfo(layerIndex).shortNameHash);
+        ////Debug.Log(stateInfo.tag);
+        //Debug.Log(iD.ToString() + ", " + stateInfo.nameHash.ToString());
+        //if (stateInfo.IsTag("hoi")) {
+        //    Debug.Log("Starte");
+        //    if (tower.enemy == null) {
+        //        Debug.Log("Apply damge");
+        //        animator.SetTrigger("NoEnemy");
+        //        return;
+        //    }
+        //    Debug.Log("Doing damage");
+            
+        //}
+    }
+
+    IEnumerator SetAttackToFalse() {
+        yield return new WaitForSeconds(attackCoolDown);
+        animator.SetBool("DoDmg", false);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

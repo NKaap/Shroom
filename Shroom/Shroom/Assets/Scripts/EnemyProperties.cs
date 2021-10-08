@@ -7,18 +7,13 @@ public class EnemyProperties : MonoBehaviour
     public int enemyHealth;
     public GameObject enemy;
     public int moneyWhenKilled;
+    public Towers towers;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+    public void DoDamage(int damageToDo) {
+        enemyHealth -= damageToDo;
         if(enemyHealth <= 0) {
             Destroy(enemy);
+            towers.EnemyDied();
             GetComponent<ShopController>().money += moneyWhenKilled;
         }
     }
