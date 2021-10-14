@@ -8,7 +8,7 @@ public class ShopController : MonoBehaviour
     [Header("Health")]  
     public Text moneyText;
     public Text moneyTextUI;
-    public int money = 100000000;
+    public int money;
 
     //Needed for Shop
     [Header("Raycast Settings")]

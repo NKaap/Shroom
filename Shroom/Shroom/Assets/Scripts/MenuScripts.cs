@@ -34,4 +34,14 @@ public class MenuScripts : MonoBehaviour
     {
         this.gameObject.SetActive(false);
     }
+
+    public void Level1()
+    {
+        SceneManager.LoadScene("level1");
+    }
+
+    public void Level2()
+    {
+
+    }
 }

@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ColliderDie : MonoBehaviour
 {
+    public GameObject shopCanvas;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,7 @@ public class ColliderDie : MonoBehaviour
         {
             Debug.Log("Gatcha Bitch");
             Destroy(gameObject);
+
         }
     }
 }

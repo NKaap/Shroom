@@ -51,7 +51,7 @@ public class Turret : MonoBehaviour
     {
         if (target == null)
             return;
-        //turretHead.LookAt(new Vector3(target.position.x, turretHead.position.y, target.position.z));
+        turretHead.LookAt(new Vector3(target.position.x, turretHead.position.y, target.position.z));
 
         if (fireCountDown <= 0f)
         {

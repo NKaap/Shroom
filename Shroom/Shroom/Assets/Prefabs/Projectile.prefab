@@ -110,3 +110,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   target: {fileID: 0}
+  enemy: {fileID: 0}
+  damage: 10

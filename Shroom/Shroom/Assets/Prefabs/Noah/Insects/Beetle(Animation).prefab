@@ -299,7 +299,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 1
-  enemy: {fileID: 0}
   moneyWhenKilled: 10
 --- !u!54 &8526818188341709016
 Rigidbody:
@@ -329,7 +328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce0aff02eab3a82409d506c13b374cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 7
 --- !u!1 &2144084684191968126
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,6 +6,8 @@ public class Projectile : MonoBehaviour
 {
     public float speed;
     public Transform target;
+    public GameObject enemy;
+    public int damage;
 
     public void Seek(Transform _target)
     {
@@ -33,9 +35,14 @@ public class Projectile : MonoBehaviour
 
     void HitTarget()
     {
-        Destroy(target.gameObject);
+        
+       Destroy(target.gameObject);
         WaveSpawner.EnemiesAlive--;
         Destroy(gameObject);
         return;
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+       
     }
 }
