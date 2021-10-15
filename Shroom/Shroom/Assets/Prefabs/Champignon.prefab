@@ -23,7 +23,7 @@ Animator:
   m_GameObject: {fileID: 8609971190571668886}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4f16e7662bf7c6d4ab9cd1d53f96ae16, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -47,8 +47,8 @@ MonoBehaviour:
   animationController: {fileID: 8916470852616444221}
   maxHealth: 100
   currentHealth: 0
-  attackCoolDown: 0
-  dmgToDo: 0
+  attackCoolDown: 2.083
+  dmgToDo: 1
   isAttacking: 0
   enemies: []
 --- !u!1 &8916470853174365118
