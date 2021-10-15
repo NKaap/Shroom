@@ -45,9 +45,10 @@ public class Towers : MonoBehaviour
     }
     //dit doet damage aan alle enemies die in de trigger zitten door ze in de lijst te zien staan
     public virtual void DoDamage() {
-        for (int i = 0; i < enemies.Count; i++) {
-            enemies[i].DoDamage(dmgToDo, this);
+        foreach (EnemyProperties enemy in enemies) {
+            enemy.DoDamage(dmgToDo, this);
         }
+        enemies = new List<EnemyProperties>();
     }
     //dit switched de state naar attack en voegt de enemie toe aan de lijst die hier boven word gebruikt
     private void OnTriggerEnter(Collider other) {

@@ -11,15 +11,10 @@ public class EnemyProperties : MonoBehaviour
     public void DoDamage(int damageToDo, Towers tower)
     {
         enemyHealth -= damageToDo;
-        if (enemyHealth <= 0)
+        if (enemyHealth == 0)
         {
-            tower.RemoveEnemy(this);
-            GetComponent<ShopController>().money += moneyWhenKilled;
+            //GetComponent<ShopController>().money += moneyWhenKilled;
             Destroy(this.gameObject);
         }
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        
     }
 }
