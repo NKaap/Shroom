@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuScripts : MonoBehaviour
 {
+    public GameObject settingscanvas;
+    public GameObject maincanvas;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,5 +46,16 @@ public class MenuScripts : MonoBehaviour
     public void Level2()
     {
 
+    }
+
+    public void settings()
+    {
+        settingscanvas.SetActive(true);
+        this.gameObject.SetActive(false);
+    }
+    public void back()
+    {
+        maincanvas.SetActive(true);
+        this.gameObject.SetActive(false);
     }
 }
