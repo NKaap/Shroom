@@ -11,10 +11,15 @@ public class TowerRotation : MonoBehaviour
     private Vector3 raycastHitPostion;
     public GameObject clickedTower;
     public RaycastHit raycastHit;
+    public GameObject shopCanvas;
 
     // Update is called once per frame
     void Update()
     { 
+        if(rotateCanvas.activeInHierarchy == true)
+        {
+            shopCanvas.SetActive(false);
+        }
 
         if (Input.GetMouseButtonDown(0))
         {
