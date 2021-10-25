@@ -7,7 +7,7 @@ public class Projectile : MonoBehaviour
     public float speed;
     public Transform target;
     public GameObject enemy;
-    public int damage;
+    public int damageAmount;
 
     public void Seek(Transform _target)
     {
@@ -35,14 +35,10 @@ public class Projectile : MonoBehaviour
 
     void HitTarget()
     {
-        
-       Destroy(target.gameObject);
         WaveSpawner.EnemiesAlive--;
         Destroy(gameObject);
-        return;
+        target.gameObject.GetComponent<EnemyProperties>().TakeDamage(10);
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-       
-    }
+    
+
 }

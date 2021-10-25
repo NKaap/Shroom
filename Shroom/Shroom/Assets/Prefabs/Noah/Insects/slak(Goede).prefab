@@ -540,6 +540,7 @@ GameObject:
   - component: {fileID: 4218217943262607468}
   - component: {fileID: 3242765173642173333}
   - component: {fileID: 3963629619740855273}
+  - component: {fileID: 2979038489804625772}
   m_Layer: 0
   m_Name: slak(Goede)
   m_TagString: enemy
@@ -623,7 +624,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce0aff02eab3a82409d506c13b374cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 6
+--- !u!114 &2979038489804625772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7706496244358961084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7cde36e99045e64681f396b527223f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 40
+  moneyWhenKilled: 0
+  money: {fileID: 0}
 --- !u!1 &7908307601239758985
 GameObject:
   m_ObjectHideFlags: 0

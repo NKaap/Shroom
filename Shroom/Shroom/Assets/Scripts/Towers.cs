@@ -46,7 +46,7 @@ public class Towers : MonoBehaviour
     //dit doet damage aan alle enemies die in de trigger zitten door ze in de lijst te zien staan
     public virtual void DoDamage() {
         foreach (EnemyProperties enemy in enemies) {
-            enemy.DoDamage(dmgToDo, this);
+            //enemy.DoDamage(dmgToDo, this);
         }
         enemies = new List<EnemyProperties>();
     }

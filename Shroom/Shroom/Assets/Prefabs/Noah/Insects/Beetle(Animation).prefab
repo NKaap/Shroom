@@ -298,9 +298,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7cde36e99045e64681f396b527223f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 1
+  enemyHealth: 20
   moneyWhenKilled: 10
-  money: {fileID: 0}
+  money: {fileID: 1828708245898706938}
 --- !u!54 &8526818188341709016
 Rigidbody:
   m_ObjectHideFlags: 0

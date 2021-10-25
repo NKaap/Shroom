@@ -8,6 +8,7 @@ TagManager:
   - Sign
   - Money
   - Tower
+  - Projectile
   layers:
   - Default
   - TransparentFX

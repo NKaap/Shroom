@@ -25,7 +25,6 @@ public class ColliderDie : MonoBehaviour
         {
             Debug.Log("Gatcha Bitch");
             Destroy(gameObject);
-
         }
     }
 }
