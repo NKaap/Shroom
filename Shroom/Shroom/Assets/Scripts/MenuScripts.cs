@@ -45,7 +45,7 @@ public class MenuScripts : MonoBehaviour
 
     public void Level2()
     {
-
+        SceneManager.LoadScene("level 2");
     }
 
     public void settings()
