@@ -47,6 +47,7 @@ public class Towers : MonoBehaviour
     public virtual void DoDamage() {
         foreach (EnemyProperties enemy in enemies) {
             //enemy.DoDamage(dmgToDo, this);
+            //enemy.gameObject.GetComponent<EnemyProperties>().TakeDamage(dmgToDo);
         }
         enemies = new List<EnemyProperties>();
     }

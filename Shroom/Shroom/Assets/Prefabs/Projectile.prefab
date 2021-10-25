@@ -97,4 +97,5 @@ MonoBehaviour:
   speed: 30
   target: {fileID: 0}
   enemy: {fileID: 0}
-  damageAmount: 10
+  damageAmount: 0
+  tower: {fileID: 182425657364773757, guid: d19697ad0e9139f49ad9bb05fdcd1850, type: 3}

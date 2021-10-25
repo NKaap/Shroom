@@ -8,7 +8,12 @@ public class Projectile : MonoBehaviour
     public Transform target;
     public GameObject enemy;
     public int damageAmount;
+    public GameObject tower;
 
+    public void Start()
+    {
+       damageAmount = tower.GetComponent<Shooter>().shooterDamage;
+    }
     public void Seek(Transform _target)
     {
         target = _target;
@@ -36,7 +41,7 @@ public class Projectile : MonoBehaviour
     void HitTarget()
     {
         Destroy(gameObject);
-        target.gameObject.GetComponent<EnemyProperties>().TakeDamage(10);
+        target.gameObject.GetComponent<EnemyProperties>().TakeDamage(damageAmount);
     }
     
 
