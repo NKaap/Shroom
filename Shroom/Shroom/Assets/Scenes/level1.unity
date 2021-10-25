@@ -9706,6 +9706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateCanvas: {fileID: 241438095}
   clickedTower: {fileID: 0}
+  shopCanvas: {fileID: 1360219880}
 --- !u!1001 &1301620157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10725,7 +10726,7 @@ Transform:
   - {fileID: 1419789691}
   - {fileID: 1827918039}
   - {fileID: 631472779}
-  - {fileID: 1298442173}
+  - {fileID: 1849302404}
   - {fileID: 35649699}
   - {fileID: 340797007}
   - {fileID: 573925428}
@@ -10734,7 +10735,7 @@ Transform:
   - {fileID: 560880920}
   - {fileID: 768199750}
   - {fileID: 93422657}
-  - {fileID: 1849302404}
+  - {fileID: 1298442173}
   m_Father: {fileID: 1551208908}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
