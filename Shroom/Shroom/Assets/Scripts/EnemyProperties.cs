@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyProperties : MonoBehaviour
 {
     public int enemyHealth;
     public int moneyWhenKilled;
     public GameObject money;
+    public Slider healthSlider;
     //hier word de damage gedaan, en hij removed zichzelf uit de lijst in tower als hij dood gaat en destroyed zichzelf
     public void DoDamage(int damage)
     {
@@ -25,6 +27,7 @@ public class EnemyProperties : MonoBehaviour
         {
             Die();
         }
+        healthSlider.value = enemyHealth;
     }
     
     public void Die()
