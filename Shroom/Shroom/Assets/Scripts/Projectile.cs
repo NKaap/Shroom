@@ -35,7 +35,6 @@ public class Projectile : MonoBehaviour
 
     void HitTarget()
     {
-        WaveSpawner.EnemiesAlive--;
         Destroy(gameObject);
         target.gameObject.GetComponent<EnemyProperties>().TakeDamage(10);
     }

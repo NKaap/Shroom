@@ -510,7 +510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 40
-  moneyWhenKilled: 20
+  moneyWhenKilled: 10
   money: {fileID: 0}
 --- !u!1 &3143325252070455631
 GameObject:

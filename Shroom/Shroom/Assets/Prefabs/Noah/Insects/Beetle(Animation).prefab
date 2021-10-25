@@ -299,8 +299,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 20
-  moneyWhenKilled: 10
-  money: {fileID: 1828708245898706938}
+  moneyWhenKilled: 5
+  money: {fileID: 0}
 --- !u!54 &8526818188341709016
 Rigidbody:
   m_ObjectHideFlags: 0

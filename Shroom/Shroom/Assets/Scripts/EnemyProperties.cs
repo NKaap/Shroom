@@ -30,8 +30,9 @@ public class EnemyProperties : MonoBehaviour
     public void Die()
     {
         Destroy(gameObject);
+        WaveSpawner.EnemiesAlive--;
         Debug.Log("Hij is dood!");
-        //shopcontroller.getcomponent<ShopController>().money += moneyWhenKilled;
+        GameObject.Find("shopcontroller").GetComponent<ShopController>().money += moneyWhenKilled;
     }
     
    
