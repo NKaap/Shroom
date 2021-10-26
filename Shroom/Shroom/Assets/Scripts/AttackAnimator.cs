@@ -7,7 +7,7 @@ public class AttackAnimator : MonoBehaviour
     public Animator animator;
     public GameObject mushroom;
     public GameObject punchMushroom;
-    private int damage;
+    public int damage;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +30,7 @@ public class AttackAnimator : MonoBehaviour
             Debug.Log("Fakka Neef");
             animator.SetBool("Attack1", true);
             other.gameObject.GetComponent<EnemyProperties>().enemyHealth -= damage;
+            other.GetComponent<EnemyProperties>().OnDeath();
         }
     }
 

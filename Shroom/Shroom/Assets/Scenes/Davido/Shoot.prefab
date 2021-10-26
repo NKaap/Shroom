@@ -80,7 +80,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shooterHealth: 0
-  shooterDamage: 30
+  shooterDamage: 10
   shooterCosts: 50
 --- !u!114 &6843659640947591684
 MonoBehaviour:

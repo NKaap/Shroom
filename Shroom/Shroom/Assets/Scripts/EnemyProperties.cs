@@ -14,14 +14,18 @@ public class EnemyProperties : MonoBehaviour
     {
         enemyHealth -= damageToDo;
         healthSlider.value = enemyHealth;
-        OnDeath(tower);
-    }
-    public void OnDeath(Towers tower)
-    {
+        OnDeath();
         if (enemyHealth <= 0)
         {
             tower.RemoveEnemy(this);
+        }
+    }
+    public void OnDeath()
+    {
+        if (enemyHealth <= 0)
+        {
             WaveSpawner.EnemiesAlive--;
+            Debug.Log("Hij is dood!");
             Destroy(gameObject);
             GameObject.Find("shopcontroller").GetComponent<ShopController>().money += moneyWhenKilled;
         }

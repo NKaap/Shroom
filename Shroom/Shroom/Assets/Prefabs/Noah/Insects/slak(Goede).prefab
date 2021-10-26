@@ -638,7 +638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7cde36e99045e64681f396b527223f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 60
+  enemyHealth: 80
   moneyWhenKilled: 20
   money: {fileID: 0}
   healthSlider: {fileID: 3060222856374259280}
@@ -909,6 +909,14 @@ PrefabInstance:
     - target: {fileID: 854237139736743568, guid: ddaef79d8be15584cae499d5d14a521a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067252134139969543, guid: ddaef79d8be15584cae499d5d14a521a, type: 3}
+      propertyPath: m_Value
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067252134139969543, guid: ddaef79d8be15584cae499d5d14a521a, type: 3}
+      propertyPath: m_MaxValue
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 6305924420528609249, guid: ddaef79d8be15584cae499d5d14a521a, type: 3}
       propertyPath: m_Name
