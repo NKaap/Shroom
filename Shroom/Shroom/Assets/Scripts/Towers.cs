@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Towers : MonoBehaviour
-{
+public class Towers : MonoBehaviour {
     [SerializeField] private Animator animationController;
 
     public float maxHealth = 100;
@@ -11,7 +10,7 @@ public class Towers : MonoBehaviour
     public float attackCoolDown;
     public int dmgToDo;
     public bool isAttacking;
-    public List<EnemyProperties> enemies = new List<EnemyProperties>(); 
+    public List<EnemyProperties> enemies = new List<EnemyProperties>();
     //als de enimie lijst leeg is zet je de animatie weer op attack
     public void Update() {
         if (enemies.Count == 0) {
@@ -45,11 +44,9 @@ public class Towers : MonoBehaviour
     }
     //dit doet damage aan alle enemies die in de trigger zitten door ze in de lijst te zien staan
     public virtual void DoDamage() {
-        foreach (EnemyProperties enemy in enemies) {
-            //enemy.DoDamage(dmgToDo, this);
-            //enemy.gameObject.GetComponent<EnemyProperties>().TakeDamage(dmgToDo);
+        for (int i = 0; i < enemies.Count; i++) {
+            enemies[i].DoDamage(dmgToDo, this);
         }
-        enemies = new List<EnemyProperties>();
     }
     //dit switched de state naar attack en voegt de enemie toe aan de lijst die hier boven word gebruikt
     private void OnTriggerEnter(Collider other) {
