@@ -40,8 +40,8 @@ public class Projectile : MonoBehaviour
 
     void HitTarget()
     {
+        target.gameObject.GetComponent<EnemyProperties>().enemyHealth -= damageAmount;
         Destroy(gameObject);
-        target.gameObject.GetComponent<EnemyProperties>().TakeDamage(damageAmount);
     }
     
 

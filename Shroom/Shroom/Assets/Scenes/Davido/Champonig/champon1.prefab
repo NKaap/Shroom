@@ -262,7 +262,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   attackCoolDown: 2.083
-  dmgToDo: 1
+  dmgToDo: 10
   isAttacking: 0
   enemies: []
 --- !u!114 &-4739197621401152286

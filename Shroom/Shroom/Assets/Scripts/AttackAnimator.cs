@@ -29,7 +29,7 @@ public class AttackAnimator : MonoBehaviour
         {
             Debug.Log("Fakka Neef");
             animator.SetBool("Attack1", true);
-            other.gameObject.GetComponent<EnemyProperties>().TakeDamage(damage);
+            other.gameObject.GetComponent<EnemyProperties>().enemyHealth -= damage;
         }
     }
 

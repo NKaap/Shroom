@@ -47,10 +47,12 @@ public class Towers : MonoBehaviour {
         for (int i = 0; i < enemies.Count; i++) {
             enemies[i].DoDamage(dmgToDo, this);
         }
+        enemies = new List<EnemyProperties>();
     }
     //dit switched de state naar attack en voegt de enemie toe aan de lijst die hier boven word gebruikt
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("enemy")) {
+            Debug.Log("Enemy!");
             animationController.SetBool("Attack", true);
             if (!isAttacking) {
                 SetState(TowerState.Attack);
