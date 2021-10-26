@@ -46,6 +46,8 @@ public void TakeDamage(int damageAmount)
         WaveSpawner.EnemiesAlive--;
         Debug.Log("Hij is dood!");
         GameObject.Find("shopcontroller").GetComponent<ShopController>().money += moneyWhenKilled;
+
+        //enemyHealth -= damageAmount;
     }
 
 
