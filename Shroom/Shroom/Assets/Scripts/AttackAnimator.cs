@@ -31,6 +31,7 @@ public class AttackAnimator : MonoBehaviour
             animator.SetBool("Attack1", true);
             other.gameObject.GetComponent<EnemyProperties>().enemyHealth -= damage;
             other.GetComponent<EnemyProperties>().OnDeath();
+            other.GetComponent<EnemyProperties>().healthSlider.value = other.GetComponent<EnemyProperties>().enemyHealth;
         }
     }
 

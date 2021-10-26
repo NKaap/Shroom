@@ -912,7 +912,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1067252134139969543, guid: ddaef79d8be15584cae499d5d14a521a, type: 3}
       propertyPath: m_Value
-      value: 8
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 1067252134139969543, guid: ddaef79d8be15584cae499d5d14a521a, type: 3}
       propertyPath: m_MaxValue
