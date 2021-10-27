@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 5445279120577247462}
   - component: {fileID: -5947951244161430259}
   m_Layer: 0
-  m_Name: Spray
+  m_Name: ASpray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

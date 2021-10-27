@@ -8,12 +8,17 @@ public class AttackAnimator : MonoBehaviour
     public GameObject mushroom;
     public GameObject punchMushroom;
     public int damage;
+    //davido's edit animation
+    public int animPlay;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = mushroom.GetComponent<Animator>();
         damage = punchMushroom.GetComponent<Punch>().punchDamage;
+
+        animPlay = 0;
+
     }
 
     // Update is called once per frame
@@ -29,6 +34,7 @@ public class AttackAnimator : MonoBehaviour
         {
             Debug.Log("Fakka Neef");
             animator.SetBool("Attack1", true);
+            animPlay = 1;
             other.gameObject.GetComponent<EnemyProperties>().enemyHealth -= damage;
             other.GetComponent<EnemyProperties>().OnDeath();
             other.GetComponent<EnemyProperties>().healthSlider.value = other.GetComponent<EnemyProperties>().enemyHealth;

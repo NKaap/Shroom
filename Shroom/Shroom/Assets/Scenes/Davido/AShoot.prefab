@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 6843659640947591684}
   - component: {fileID: 8960548949329197003}
   m_Layer: 0
-  m_Name: Shoot
+  m_Name: AShoot
   m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
