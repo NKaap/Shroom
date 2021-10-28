@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 5519553575141572671}
   - component: {fileID: -4739197621401152286}
   m_Layer: 0
-  m_Name: Achampon
+  m_Name: champon1
   m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -211,7 +211,6 @@ Transform:
   - {fileID: 4009057526716740299}
   - {fileID: 7967661446274407786}
   - {fileID: 5409911422914281746}
-  - {fileID: 6294855331764026145}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -401,74 +400,4 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6250454629059040517, guid: 04e43bc8f3315834a81d04387447fe42, type: 3}
   m_PrefabInstance: {fileID: 5519553576057120505}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &5823551172714814666
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 5409911422335672917}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: d3709d1a4764fae4ea95bf17aefe8a84, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d3709d1a4764fae4ea95bf17aefe8a84, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d3709d1a4764fae4ea95bf17aefe8a84, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d3709d1a4764fae4ea95bf17aefe8a84, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d3709d1a4764fae4ea95bf17aefe8a84, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d3709d1a4764fae4ea95bf17aefe8a84, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d3709d1a4764fae4ea95bf17aefe8a84, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d3709d1a4764fae4ea95bf17aefe8a84, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d3709d1a4764fae4ea95bf17aefe8a84, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d3709d1a4764fae4ea95bf17aefe8a84, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d3709d1a4764fae4ea95bf17aefe8a84, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d3709d1a4764fae4ea95bf17aefe8a84, type: 3}
-      propertyPath: m_Name
-      value: mush n kegel
-      objectReference: {fileID: 0}
-    - target: {fileID: 6913644787859820699, guid: d3709d1a4764fae4ea95bf17aefe8a84, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 5c6963a5e4d05ce48b993afe909c03ab, type: 2}
-    - target: {fileID: 8580073333639885662, guid: d3709d1a4764fae4ea95bf17aefe8a84, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 433b19f4aead89f45b711697cf95d214, type: 2}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d3709d1a4764fae4ea95bf17aefe8a84, type: 3}
---- !u!4 &6294855331764026145 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d3709d1a4764fae4ea95bf17aefe8a84, type: 3}
-  m_PrefabInstance: {fileID: 5823551172714814666}
   m_PrefabAsset: {fileID: 0}
