@@ -11,6 +11,7 @@ public class Towers : MonoBehaviour {
     public int dmgToDo;
     public bool isAttacking;
     public List<EnemyProperties> enemies = new List<EnemyProperties>();
+    public GameObject particle;
     //als de enimie lijst leeg is zet je de animatie weer op attack
     public void Update() {
         if (enemies.Count == 0) {
@@ -29,6 +30,7 @@ public class Towers : MonoBehaviour {
         switch (newTowerState) {
             case TowerState.Attack:
             animationController.SetBool("DoDmg", true);
+            particle = Instantiate(particle, transform.position, transform.rotation);
             StartCoroutine(SetAttackToFalse());
             break;
             case TowerState.Idle:
@@ -39,15 +41,17 @@ public class Towers : MonoBehaviour {
     //hier staat dus die wacht tijd en elke keer als de tijd is afgelopen attacked hij en doet hij de wacht tijd opniew tot de enemie dood is of uit de trigger is
     IEnumerator SetAttackToFalse() {
         yield return new WaitForSeconds(attackCoolDown);
+        GameObject.Destroy(particle);
         DoDamage();
         SetState(TowerState.Attack);
     }
     //dit doet damage aan alle enemies die in de trigger zitten door ze in de lijst te zien staan
     public virtual void DoDamage() {
         for (int i = 0; i < enemies.Count; i++) {
+            Debug.Log("Did damage");
             enemies[i].DoDamage(dmgToDo, this);
         }
-        enemies = new List<EnemyProperties>();
+        
     }
     //dit switched de state naar attack en voegt de enemie toe aan de lijst die hier boven word gebruikt
     private void OnTriggerEnter(Collider other) {
