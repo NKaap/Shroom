@@ -8,37 +8,17 @@ public class MenuScripts : MonoBehaviour
 {
     public GameObject settingscanvas;
     public GameObject maincanvas;
-    public GameObject pausecanvas;
-    public static bool GameIsPaused = false;
-    public GameObject ingamecanvas;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (GameIsPaused)
-            {
-                resume();
-            }
-            else
-            {
-                Pause();
-            }
-
-        }
-    }
-    void Pause()
-    {
-        pausecanvas.SetActive(true);
-        Time.timeScale = 0f;
-        GameIsPaused = true;
-        ingamecanvas.SetActive(false);
+    
     }
     public void QuitGame()
     {
@@ -78,23 +58,6 @@ public class MenuScripts : MonoBehaviour
     {
         maincanvas.SetActive(true);
         this.gameObject.SetActive(false);
-    }
-    public void backpause()
-    {
-        pausecanvas.SetActive(true);
-        this.gameObject.SetActive(false);
-    }
-    public void resume()
-    {
-        ingamecanvas.SetActive(true);
-        Time.timeScale = 1;
-        pausecanvas.SetActive(false);
-        settingscanvas.SetActive(false);
-        GameIsPaused = false;
-    }
-    public void help()
-    {
-
     }
 
 }

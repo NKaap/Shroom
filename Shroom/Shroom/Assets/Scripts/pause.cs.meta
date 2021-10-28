@@ -1,11 +1,13 @@
 fileFormatVersion: 2
-guid: c95c5082576a4fa4ca25ac95ccab81d6
+guid: a1b811c7646d6ff48a14202d8b543b9f
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
   - settingscanvas: {fileID: 5646936351886119582, guid: ea183e6a4781afa4385d9f9ab0a969fa, type: 3}
   - maincanvas: {fileID: 4348970303915265808, guid: bd44612a212dae042bfdbb0b75a96381, type: 3}
+  - pausecanvas: {fileID: 5914383904918545674, guid: f190a8852c5950a4aa334717891eed4e, type: 3}
+  - ingamecanvas: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
