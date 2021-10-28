@@ -121,7 +121,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5914383904918545665}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuScripts, Assembly-CSharp
         m_MethodName: MainMenu
         m_Mode: 1
@@ -333,7 +333,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5914383904918545665}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuScripts, Assembly-CSharp
         m_MethodName: resume
         m_Mode: 1
@@ -466,7 +466,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5914383904918545665}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuScripts, Assembly-CSharp
         m_MethodName: help
         m_Mode: 1
@@ -806,7 +806,6 @@ GameObject:
   - component: {fileID: 5914383904918545670}
   - component: {fileID: 5914383904918545671}
   - component: {fileID: 5914383904918545668}
-  - component: {fileID: 5914383904918545665}
   m_Layer: 0
   m_Name: pause
   m_TagString: Untagged
@@ -900,22 +899,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &5914383904918545665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5914383904918545674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c95c5082576a4fa4ca25ac95ccab81d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  settingscanvas: {fileID: 0}
-  maincanvas: {fileID: 0}
-  pausecanvas: {fileID: 5914383904918545674}
-  ingamecanvas: {fileID: 0}
 --- !u!1 &5914383904976448583
 GameObject:
   m_ObjectHideFlags: 0
@@ -1112,7 +1095,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5914383904918545665}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuScripts, Assembly-CSharp
         m_MethodName: settings
         m_Mode: 1

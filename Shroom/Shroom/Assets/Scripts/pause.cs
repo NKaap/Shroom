@@ -7,14 +7,16 @@ using UnityEngine.UI;
 public class pause : MonoBehaviour
 {
     public GameObject settingscanvas;
-    public GameObject maincanvas;
     public GameObject pausecanvas;
     public static bool GameIsPaused = false;
     public GameObject ingamecanvas;
+    public GameObject helpp;
     // Start is called before the first frame update
     void Start()
     {
-        
+        pausecanvas.SetActive(false);
+        settingscanvas.SetActive(false);
+        helpp.SetActive(false);
     }
 
     // Update is called once per frame
@@ -60,7 +62,14 @@ public class pause : MonoBehaviour
 
     public void help()
     {
-
+        helpp.SetActive(true);
+        this.gameObject.SetActive(false);
+        
+    }
+    public void settings()
+    {
+        settingscanvas.SetActive(true);
+        this.gameObject.SetActive(false);
     }
 
 }

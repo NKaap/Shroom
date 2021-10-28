@@ -7,7 +7,7 @@ MonoImporter:
   - settingscanvas: {fileID: 5646936351886119582, guid: ea183e6a4781afa4385d9f9ab0a969fa, type: 3}
   - maincanvas: {fileID: 4348970303915265808, guid: bd44612a212dae042bfdbb0b75a96381, type: 3}
   - pausecanvas: {fileID: 5914383904918545674, guid: f190a8852c5950a4aa334717891eed4e, type: 3}
-  - ingamecanvas: {instanceID: 0}
+  - ingamecanvas: {fileID: 7967198196169371411, guid: 3c74844431d860245992344aa19dc518, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
