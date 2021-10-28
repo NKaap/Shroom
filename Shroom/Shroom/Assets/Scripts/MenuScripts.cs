@@ -8,6 +8,7 @@ public class MenuScripts : MonoBehaviour
 {
     public GameObject settingscanvas;
     public GameObject maincanvas;
+    public GameObject pausecanvas;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,5 +58,18 @@ public class MenuScripts : MonoBehaviour
     {
         maincanvas.SetActive(true);
         this.gameObject.SetActive(false);
+    }
+    public void backpause()
+    {
+        pausecanvas.SetActive(true);
+        this.gameObject.SetActive(false);
+    }
+    public void resume()
+    {
+        this.gameObject.SetActive(false);
+    }
+    public void help()
+    {
+
     }
 }
