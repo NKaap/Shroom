@@ -25,11 +25,6 @@ public class ShopController : MonoBehaviour
     public GameObject spray;
     public GameObject bomb;
 
-    //Enemies ++ Money
-    [Header("Enemies")]
-    public GameObject[] enemies;
-    public int[] enemiesPlusMoney;
-
     // Start is called before the first frame update
     void Start()
     {

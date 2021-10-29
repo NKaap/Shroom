@@ -13,7 +13,7 @@ public class EnemyProperties : MonoBehaviour
     //hier word de damage gedaan, en hij removed zichzelf uit de lijst in tower als hij dood gaat en destroyed zichzelf
     public void DoDamage(int damageToDo, Towers tower) {
         enemyHealth -= damageToDo;
-        //healthSlider.value = enemyHealth;
+        healthSlider.value = enemyHealth;
         if (enemyHealth <= 0)
         {
             tower.RemoveEnemy(this);
@@ -25,7 +25,7 @@ public class EnemyProperties : MonoBehaviour
         WaveSpawner.EnemiesAlive--;
         Debug.Log("Hij is dood!");
         Destroy(gameObject);
-        //GameObject.Find("shopcontroller").GetComponent<ShopController>().money += moneyWhenKilled;
+        GameObject.Find("shopcontroller").GetComponent<ShopController>().money += moneyWhenKilled;
     }
 }
 /*public void DoDamage(int damageToDo, Towers tower) {

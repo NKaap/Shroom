@@ -11,6 +11,7 @@ public class pause : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject ingamecanvas;
     public GameObject helpp;
+    public GameObject buyCanvas;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +34,10 @@ public class pause : MonoBehaviour
                 Pause();
             }
 
+        }
+        if(pausecanvas.activeInHierarchy == true)
+        {
+            buyCanvas.SetActive(false);
         }
     }
     public void MainMenu()
