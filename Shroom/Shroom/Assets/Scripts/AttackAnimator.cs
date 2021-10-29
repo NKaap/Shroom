@@ -13,7 +13,7 @@ public class AttackAnimator : MonoBehaviour
     void Start()
     {
         animator = mushroom.GetComponent<Animator>();
-        damage = punchMushroom.GetComponent<Punch>().punchDamage;
+        damage = punchMushroom.GetComponent<Towers>().dmgToDo;
     }
 
     // Update is called once per frame

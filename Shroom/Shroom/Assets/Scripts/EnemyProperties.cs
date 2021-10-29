@@ -25,7 +25,7 @@ public class EnemyProperties : MonoBehaviour
         WaveSpawner.EnemiesAlive--;
         Debug.Log("Hij is dood!");
         Destroy(gameObject);
-        GameObject.Find("shopcontroller").GetComponent<ShopController>().money += moneyWhenKilled;
+        //GameObject.Find("shopcontroller").GetComponent<ShopController>().money += moneyWhenKilled;
     }
 }
 /*public void DoDamage(int damageToDo, Towers tower) {

@@ -36,7 +36,7 @@ public class Projectile : MonoBehaviour
 
     void HitTarget()
     {
-        target.GetComponent<EnemyProperties>().enemyHealth -= tower.GetComponent<Shooter>().shooterDamage;
+        target.GetComponent<EnemyProperties>().enemyHealth -= tower.GetComponent<Towers>().dmgToDo;
         target.GetComponent<EnemyProperties>().OnDeath();
         target.GetComponent<EnemyProperties>().healthSlider.value = target.GetComponent<EnemyProperties>().enemyHealth;
         Debug.Log("Shot");

@@ -49,7 +49,9 @@ MonoBehaviour:
   currentHealth: 0
   attackCoolDown: 2.083
   dmgToDo: 25
+  costs: 0
   isAttacking: 0
+  particle: {fileID: 0}
   enemies: []
 --- !u!1 &8916470853174365118
 GameObject:
@@ -60,7 +62,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8916470853174365117}
-  - component: {fileID: 259429706312315763}
   - component: {fileID: -3504316091562752429}
   m_Layer: 0
   m_Name: Champignon
@@ -86,21 +87,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &259429706312315763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8916470853174365118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 831e4ba2db237bf429b8caac716fe61b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpHealth: 0
-  jumpDamage: 20
-  jumpCosts: 25
 --- !u!65 &-3504316091562752429
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -3,7 +3,6 @@ using UnityEngine.UI;
 
 public class ShopController : MonoBehaviour
 {
-    
     //Money and text for your Towers
     [Header("Health")]  
     public Text moneyText;
@@ -20,7 +19,11 @@ public class ShopController : MonoBehaviour
 
     //Towers
     [Header("Towers")]
-    public GameObject[] towers;
+    public GameObject punch;
+    public GameObject jump;
+    public GameObject shoot;
+    public GameObject spray;
+    public GameObject bomb;
 
     //Enemies ++ Money
     [Header("Enemies")]
@@ -82,11 +85,11 @@ public class ShopController : MonoBehaviour
 
     public void Punch()
     {
-        if (money >= towers[0].GetComponent<Punch>().punchCosts)
+        if (money >= punch.GetComponent<Towers>().costs)
         {
-            money -= towers[0].GetComponent<Punch>().punchCosts;
+            money -= punch.GetComponent<Towers>().costs;
             Debug.Log("Punch Spawned");
-            Instantiate(towers[0], raycastHitPostion, Quaternion.identity);
+            Instantiate(punch, raycastHitPostion, Quaternion.identity);
             shopCanvas.SetActive(false);
             Destroy(signRaycast);
             moneyGameUI.SetActive(true);
@@ -95,11 +98,11 @@ public class ShopController : MonoBehaviour
 
     public void Jump()
     {
-        if (money >= towers[1].GetComponent<Jump>().jumpCosts)
+        if (money >= jump.GetComponent<Towers>().costs)
         {
-            money -= towers[1].GetComponent<Jump>().jumpCosts;
+            money -= jump.GetComponent<Towers>().costs;
             Debug.Log("Jump Spawned");
-            Instantiate(towers[1], raycastHitPostion, Quaternion.identity);
+            Instantiate(jump, raycastHitPostion, Quaternion.identity);
             shopCanvas.SetActive(false);
             Destroy(signRaycast);
             moneyGameUI.SetActive(true);
@@ -108,11 +111,11 @@ public class ShopController : MonoBehaviour
 
     public void Shoot()
     {
-        if (money >= towers[2].GetComponent<Shooter>().shooterCosts)
+        if (money >= shoot.GetComponent<Towers>().costs)
         {
-            money -= towers[2].GetComponent<Shooter>().shooterCosts;
+            money -= shoot.GetComponent<Towers>().costs;
             Debug.Log("Shoot Spawned");
-            Instantiate(towers[2], raycastHitPostion, Quaternion.identity);
+            Instantiate(shoot, raycastHitPostion, Quaternion.identity);
             shopCanvas.SetActive(false);
             Destroy(signRaycast);
             moneyGameUI.SetActive(true);
@@ -121,11 +124,11 @@ public class ShopController : MonoBehaviour
 
     public void Spray()
     {
-        if (money >= towers[3].GetComponent<Spray>().sprayCosts)
+        if (money >= spray.GetComponent<Towers>().costs)
         {
-            money -= towers[3].GetComponent<Spray>().sprayCosts;
+            money -= spray.GetComponent<Towers>().costs;
             Debug.Log("Spray Spawned");
-            Instantiate(towers[3], raycastHitPostion, Quaternion.identity);
+            Instantiate(spray, raycastHitPostion, Quaternion.identity);
             shopCanvas.SetActive(false);
             Destroy(signRaycast);
             moneyGameUI.SetActive(true);
@@ -134,11 +137,11 @@ public class ShopController : MonoBehaviour
 
     public void Bomb()
     {
-        if (money >= towers[4].GetComponent<Bomb>().bombCosts)
+        if (money >= bomb.GetComponent<Towers>().costs)
         {
-            money -= towers[4].GetComponent<Bomb>().bombCosts;
+            money -= bomb.GetComponent<Towers>().costs;
             Debug.Log("Bomb Spawned");
-            Instantiate(towers[4], raycastHitPostion, Quaternion.identity);
+            Instantiate(bomb, raycastHitPostion, Quaternion.identity);
             shopCanvas.SetActive(false);
             Destroy(signRaycast);
             moneyGameUI.SetActive(true);

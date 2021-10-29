@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: -2929669281839350971}
   - component: {fileID: 6843659640947591684}
   - component: {fileID: 8960548949329197003}
+  - component: {fileID: 3160648877195653029}
   m_Layer: 0
   m_Name: AShoot
   m_TagString: Tower
@@ -113,6 +114,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.39, y: 1.72, z: 3.39}
   m_Center: {x: 0, y: 1.08, z: 0}
+--- !u!114 &3160648877195653029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182425657364773757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d8161803e68db143b4193d8fbd5a6b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationController: {fileID: 0}
+  maxHealth: 100
+  currentHealth: 0
+  attackCoolDown: 0
+  dmgToDo: 0
+  costs: 50
+  isAttacking: 0
+  particle: {fileID: 4336416475652398199, guid: 7861e0a4376c2ec4eb5a5a55c8a46a60, type: 3}
+  enemies: []
 --- !u!95 &1356725722363509067
 Animator:
   serializedVersion: 3

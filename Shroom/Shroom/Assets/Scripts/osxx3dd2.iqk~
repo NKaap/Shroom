@@ -9,10 +9,9 @@ public class Towers : MonoBehaviour {
     public float currentHealth;
     public float attackCoolDown;
     public int dmgToDo;
-    public int costs;
     public bool isAttacking;
-    public GameObject particle;
     public List<EnemyProperties> enemies = new List<EnemyProperties>();
+    public GameObject particle;
     private GameObject newParticle;
     //als de enimie lijst leeg is zet je de animatie weer op attack
     public void Update() {
