@@ -1,30 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class GameOver : MonoBehaviour
+public class ReloadScene : MonoBehaviour
 {
-    public Slider hpSlider;
-
+    public string SceneName;
     // Start is called before the first frame update
     void Start()
     {
-        hpSlider.value = 100;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(hpSlider.value == 0)
+        if (Input.GetKeyDown("r"))
         {
-            GameOverFunction();
+            Reload();
         }
     }
 
-    void GameOverFunction()
+    public void Reload()
     {
-        SceneManager.LoadScene("AGameOver");
+        SceneManager.LoadScene(SceneName);
     }
 }

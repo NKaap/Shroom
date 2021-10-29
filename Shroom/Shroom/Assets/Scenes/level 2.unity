@@ -25509,6 +25509,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1640474821385649978, guid: f6c5c9cc8ef0d494583d5e456b3ca7ae, type: 3}
+      propertyPath: m_Text
+      value: / 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1640474821626734920, guid: f6c5c9cc8ef0d494583d5e456b3ca7ae, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -25961,6 +25965,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1515754646}
+    - target: {fileID: 8487130723779397233, guid: f6c5c9cc8ef0d494583d5e456b3ca7ae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8487130723823468792, guid: f6c5c9cc8ef0d494583d5e456b3ca7ae, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -25981,6 +25989,42 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1515754646}
+    - target: {fileID: 9042764240854682187, guid: f6c5c9cc8ef0d494583d5e456b3ca7ae, type: 3}
+      propertyPath: m_Text
+      value: 'cost: - 100
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042764240854682187, guid: f6c5c9cc8ef0d494583d5e456b3ca7ae, type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042764240854682187, guid: f6c5c9cc8ef0d494583d5e456b3ca7ae, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042764241034712574, guid: f6c5c9cc8ef0d494583d5e456b3ca7ae, type: 3}
+      propertyPath: m_Text
+      value: 'cost: - 20'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042764241147135819, guid: f6c5c9cc8ef0d494583d5e456b3ca7ae, type: 3}
+      propertyPath: m_Text
+      value: 'cost: - 30'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042764242366184052, guid: f6c5c9cc8ef0d494583d5e456b3ca7ae, type: 3}
+      propertyPath: m_Text
+      value: 'cost: - 80
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042764242366184052, guid: f6c5c9cc8ef0d494583d5e456b3ca7ae, type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042764242366184052, guid: f6c5c9cc8ef0d494583d5e456b3ca7ae, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6c5c9cc8ef0d494583d5e456b3ca7ae, type: 3}
 --- !u!1 &5914383903911892800 stripped

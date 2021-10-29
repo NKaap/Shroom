@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce0aff02eab3a82409d506c13b374cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 7
 --- !u!65 &3953837064128122009
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 40
-  moneyWhenKilled: 5
+  moneyWhenKilled: 4
   money: {fileID: 0}
   healthSlider: {fileID: 713437371042033575}
 --- !u!1 &1139521288878956623

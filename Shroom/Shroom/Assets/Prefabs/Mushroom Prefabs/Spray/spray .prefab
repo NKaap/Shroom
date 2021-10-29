@@ -117,8 +117,8 @@ MonoBehaviour:
   currentHealth: 0
   attackCoolDown: 1
   particleCooldown: 2
-  dmgToDo: 5
-  costs: 20
+  dmgToDo: 15
+  costs: 80
   isAttacking: 0
   particle: {fileID: 4240647096871309422}
   enemies: []

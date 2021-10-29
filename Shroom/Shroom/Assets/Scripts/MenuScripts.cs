@@ -27,6 +27,7 @@ public class MenuScripts : MonoBehaviour
 
     public void Play()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("level1");
     }
     public void MainMenu()

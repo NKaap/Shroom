@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2067330109766326634, guid: 7da54cda241b7274a86357d096082aad, type: 3}
       propertyPath: costs
-      value: 40
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3950583510269134509, guid: 7da54cda241b7274a86357d096082aad, type: 3}
       propertyPath: m_Name

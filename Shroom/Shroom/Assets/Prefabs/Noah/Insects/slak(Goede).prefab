@@ -639,7 +639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 80
-  moneyWhenKilled: 20
+  moneyWhenKilled: 10
   money: {fileID: 0}
   healthSlider: {fileID: 3060222856374259280}
 --- !u!1 &7908307601239758985

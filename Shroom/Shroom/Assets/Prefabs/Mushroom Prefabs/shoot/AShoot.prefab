@@ -114,7 +114,8 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   attackCoolDown: 0
-  dmgToDo: 10
+  particleCooldown: 0
+  dmgToDo: 25
   costs: 50
   isAttacking: 0
   particle: {fileID: 4336416475652398199, guid: 7861e0a4376c2ec4eb5a5a55c8a46a60, type: 3}

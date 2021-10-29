@@ -12,11 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/level1.unity
     guid: d0e0a644973307741ba9ce22f786765c
   - enabled: 1
-    path: Assets/Scenes/GameOver.unity
-    guid: 5e05c3a18e0c1014ca62ed7ba68216b7
-  - enabled: 1
     path: Assets/Scenes/level 2.unity
     guid: 6d08ead855ebb4848b5f413fbf3f55a6
+  - enabled: 1
+    path: Assets/Scenes/AGameOver.unity
+    guid: ff825146c0e70d54eb569b1b4f34b538
   - enabled: 1
     path: Assets/Scenes/Ayouwon.unity
     guid: f83935a47c0748d47942cb3689c32bdf
