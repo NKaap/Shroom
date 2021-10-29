@@ -15710,7 +15710,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 802866291}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.75, z: 0}
+  m_LocalPosition: {x: 0, y: 0.39, z: 0}
   m_LocalScale: {x: 353.3, y: 306, z: 301.7}
   m_Children: []
   m_Father: {fileID: 0}
@@ -21180,11 +21180,11 @@ MonoBehaviour:
   shopCanvas: {fileID: 1360219880}
   signRaycast: {fileID: 0}
   moneyGameUI: {fileID: 2022928366}
-  punch: {fileID: 341590979912815450, guid: 454e8dd8c17916c478a7e5c718f764ea, type: 3}
-  jump: {fileID: 4636470565431228655, guid: 8a53f26122ae8464186eca12f7de87a0, type: 3}
-  shoot: {fileID: 182425657364773757, guid: d19697ad0e9139f49ad9bb05fdcd1850, type: 3}
-  spray: {fileID: 399434969382997224, guid: 83bbf69be852f194f92bc20fae9506e7, type: 3}
-  bomb: {fileID: 3950583510269134509, guid: 7da54cda241b7274a86357d096082aad, type: 3}
+  punch: {fileID: 3959804170698185944, guid: c674cd75646a88b49934e4c06725647a, type: 3}
+  jump: {fileID: 2909501946702109278, guid: 35889e12a72780e41beeede05a8309a8, type: 3}
+  shoot: {fileID: 3536801238052987453, guid: c313ec027506e954a88a36dec903de99, type: 3}
+  spray: {fileID: 3736609260696545184, guid: 13894970eae681141b1cb2eef1ff15c5, type: 3}
+  bomb: {fileID: 4595555671835633593, guid: c06c4eb0649318441bb4143c79f89e8e, type: 3}
 --- !u!4 &1515754647
 Transform:
   m_ObjectHideFlags: 0
