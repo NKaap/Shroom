@@ -40,7 +40,6 @@ public class Projectile : MonoBehaviour
         target.GetComponent<EnemyProperties>().OnDeath();
         target.GetComponent<EnemyProperties>().healthSlider.value = target.GetComponent<EnemyProperties>().enemyHealth;
         Debug.Log("Shot");
-        Destroy(this.gameObject);
     }
     
 
