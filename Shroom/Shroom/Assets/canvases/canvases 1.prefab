@@ -3226,6 +3226,18 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: -17
       objectReference: {fileID: 0}
+    - target: {fileID: 8370258124493377466, guid: 4454ab464e1e34147a037bfa188fbe06, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370258124493377466, guid: 4454ab464e1e34147a037bfa188fbe06, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370258124493377466, guid: 4454ab464e1e34147a037bfa188fbe06, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8370258124825184149, guid: 4454ab464e1e34147a037bfa188fbe06, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -3234,9 +3246,25 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8370258125157423942, guid: 4454ab464e1e34147a037bfa188fbe06, type: 3}
+      propertyPath: m_Text
+      value: high
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370258125230996897, guid: 4454ab464e1e34147a037bfa188fbe06, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[0].m_Text
+      value: high
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370258125230996897, guid: 4454ab464e1e34147a037bfa188fbe06, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[1].m_Text
+      value: medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370258125230996897, guid: 4454ab464e1e34147a037bfa188fbe06, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[2].m_Text
+      value: low
+      objectReference: {fileID: 0}
     - target: {fileID: 8370258125686909828, guid: 4454ab464e1e34147a037bfa188fbe06, type: 3}
       propertyPath: m_Size
-      value: 0.81333333
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4454ab464e1e34147a037bfa188fbe06, type: 3}
