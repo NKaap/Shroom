@@ -5093,96 +5093,6 @@ MonoBehaviour:
     enemy2: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
     count2: 12
     rate2: 1.8
-  - enemy: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count: 8
-    rate: 1
-    enemy2: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count2: 12
-    rate2: 1.8
-  - enemy: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count: 8
-    rate: 1
-    enemy2: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count2: 12
-    rate2: 1.8
-  - enemy: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count: 8
-    rate: 1
-    enemy2: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count2: 12
-    rate2: 1.8
-  - enemy: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count: 8
-    rate: 1
-    enemy2: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count2: 12
-    rate2: 1.8
-  - enemy: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count: 8
-    rate: 1
-    enemy2: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count2: 12
-    rate2: 1.8
-  - enemy: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count: 8
-    rate: 1
-    enemy2: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count2: 12
-    rate2: 1.8
-  - enemy: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count: 8
-    rate: 1
-    enemy2: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count2: 12
-    rate2: 1.8
-  - enemy: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count: 8
-    rate: 1
-    enemy2: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count2: 12
-    rate2: 1.8
-  - enemy: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count: 8
-    rate: 1
-    enemy2: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count2: 12
-    rate2: 1.8
-  - enemy: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count: 8
-    rate: 1
-    enemy2: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count2: 12
-    rate2: 1.8
-  - enemy: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count: 8
-    rate: 1
-    enemy2: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count2: 12
-    rate2: 1.8
-  - enemy: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count: 8
-    rate: 1
-    enemy2: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count2: 12
-    rate2: 1.8
-  - enemy: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count: 8
-    rate: 1
-    enemy2: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count2: 12
-    rate2: 1.8
-  - enemy: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count: 8
-    rate: 1
-    enemy2: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count2: 12
-    rate2: 1.8
-  - enemy: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count: 8
-    rate: 1
-    enemy2: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
-    count2: 12
-    rate2: 1.8
   spawnPoint: {fileID: 1488155667}
   timeBetweenWaves: 8
   countdown: 0
@@ -10086,6 +9996,7 @@ MonoBehaviour:
   rotateCanvas: {fileID: 241438095}
   clickedTower: {fileID: 0}
   shopCanvas: {fileID: 1360219880}
+  sign: {fileID: 0}
 --- !u!1001 &1301620157
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class WaveSpawner : MonoBehaviour
 {
@@ -29,6 +30,7 @@ public class WaveSpawner : MonoBehaviour
         if (WaveIndex == waves.Length)
         {
             this.enabled = false;
+            SceneManager.LoadScene("Ayouwon");
         }
 
         if (countdown<= 0f)
