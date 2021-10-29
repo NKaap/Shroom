@@ -5093,6 +5093,12 @@ MonoBehaviour:
     enemy2: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
     count2: 12
     rate2: 1.8
+  - enemy: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
+    count: 0
+    rate: 0
+    enemy2: {fileID: 7706496244358961084, guid: 11fb6f01269e8d549b4561cc05586cfe, type: 3}
+    count2: 0
+    rate2: 0
   spawnPoint: {fileID: 1488155667}
   timeBetweenWaves: 8
   countdown: 0
@@ -7845,6 +7851,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 35ec04d9b16472c4093e2a650a9b0346, type: 3}
   m_PrefabInstance: {fileID: 37924167}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &973919052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 973919053}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &973919053
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973919052}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2310.0715, y: -3100.6812, z: -708.0623}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &975153341
 PrefabInstance:
   m_ObjectHideFlags: 0

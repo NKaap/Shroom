@@ -29,7 +29,6 @@ public class WaveSpawner : MonoBehaviour
 
         if (WaveIndex == waves.Length)
         {
-            this.enabled = false;
             SceneManager.LoadScene("Ayouwon");
         }
 
