@@ -8,10 +8,12 @@ public class Towers : MonoBehaviour {
     public float maxHealth = 100;
     public float currentHealth;
     public float attackCoolDown;
+    public float particleCooldown;
     public int dmgToDo;
     public int costs;
     public bool isAttacking;
     public GameObject particle;
+    private bool spawnParticle = false;
     public List<EnemyProperties> enemies = new List<EnemyProperties>();
     private GameObject newParticle;
     //als de enimie lijst leeg is zet je de animatie weer op attack
@@ -33,10 +35,9 @@ public class Towers : MonoBehaviour {
             case TowerState.Attack:
             animationController.SetBool("DoDmg", true);
             if (isAttacking) {
-                particle.SetActive(true);
                 StartCoroutine(SetAttackToFalse());
+                StartCoroutine(PlayParticle());
             }
-            
             break;
             case TowerState.Idle:
             animationController.SetBool("DoDmg", false);
@@ -46,11 +47,14 @@ public class Towers : MonoBehaviour {
     //hier staat dus die wacht tijd en elke keer als de tijd is afgelopen attacked hij en doet hij de wacht tijd opniew tot de enemie dood is of uit de trigger is
     IEnumerator SetAttackToFalse() {
         yield return new WaitForSeconds(attackCoolDown);
-        if (isAttacking) {
-            particle.SetActive(false);
-        }
         DoDamage();
         SetState(TowerState.Attack);
+    }
+    IEnumerator PlayParticle() {
+        yield return new WaitForSeconds(1f);
+        particle.SetActive(true);
+        yield return new WaitForSeconds(particleCooldown);
+        particle.SetActive(false);
     }
     //dit doet damage aan alle enemies die in de trigger zitten door ze in de lijst te zien staan
     public virtual void DoDamage() {
@@ -62,7 +66,6 @@ public class Towers : MonoBehaviour {
     public void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("enemy")) {
             animationController.SetBool("Attack", true);
-            particle.SetActive(true);
             if (!isAttacking) {
                 isAttacking = true;
                 SetState(TowerState.Attack);

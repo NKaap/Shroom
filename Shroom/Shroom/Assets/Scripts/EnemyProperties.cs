@@ -13,7 +13,7 @@ public class EnemyProperties : MonoBehaviour
     //hier word de damage gedaan, en hij removed zichzelf uit de lijst in tower als hij dood gaat en destroyed zichzelf
     public void DoDamage(int damageToDo, Towers tower) {
         enemyHealth -= damageToDo;
-        healthSlider.value = enemyHealth;
+        //healthSlider.value = enemyHealth;
         if (enemyHealth <= 0)
         {
             tower.RemoveEnemy(this);

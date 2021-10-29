@@ -116,6 +116,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   attackCoolDown: 1
+  particleCooldown: 2
   dmgToDo: 5
   costs: 20
   isAttacking: 0
