@@ -23,6 +23,9 @@ public class Towers : MonoBehaviour {
             SetState(TowerState.Idle);
             isAttacking = false;
         }
+        if (enemies[1].GetComponent<EnemyProperties>().enemyHealth <= 0) {
+            enemies.Remove(enemies[1]);
+        }
     }
     //dit is gwn een lijst van de verschillende animaties
     public enum TowerState {
