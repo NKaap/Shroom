@@ -9,6 +9,7 @@ public class Projectile : MonoBehaviour
     public GameObject enemy;
     public int damageAmount;
     public GameObject tower;
+    public float canAttack;
 
     public void Seek(Transform _target)
     {
@@ -20,6 +21,7 @@ public class Projectile : MonoBehaviour
         if (target == null)
         {
             Destroy(gameObject);
+            canAttack = 1;
             return;
         }
 
@@ -36,10 +38,16 @@ public class Projectile : MonoBehaviour
 
     void HitTarget()
     {
-        target.GetComponent<EnemyProperties>().enemyHealth -= tower.GetComponent<Towers>().dmgToDo;
-        target.GetComponent<EnemyProperties>().OnDeath();
-        target.GetComponent<EnemyProperties>().healthSlider.value = target.GetComponent<EnemyProperties>().enemyHealth;
-        Debug.Log("Shot");
+        if (canAttack == 1) {
+            target.GetComponent<EnemyProperties>().enemyHealth -= tower.GetComponent<Towers>().dmgToDo;
+            if (target.GetComponent<EnemyProperties>().enemyHealth <= 0) {
+                target.GetComponent<EnemyProperties>().OnDeath();
+                Debug.Log("Kill");
+            }
+            target.GetComponent<EnemyProperties>().healthSlider.value = target.GetComponent<EnemyProperties>().enemyHealth;
+            Debug.Log("Shot");
+        }
+        canAttack += 1;
     }
     
 
