@@ -12,11 +12,13 @@ public class TowerRotation : MonoBehaviour
     public GameObject clickedTower;
     public RaycastHit raycastHit;
     public GameObject shopCanvas;
+    public GameObject sign;
+    private int costss;
 
     // Update is called once per frame
     void Update()
     { 
-        if(rotateCanvas.activeInHierarchy == true)
+        if (rotateCanvas.activeInHierarchy == true)
         {
             shopCanvas.SetActive(false);
         }
@@ -60,5 +62,15 @@ public class TowerRotation : MonoBehaviour
         clickedTower.transform.Rotate(0, 90, 0);
         rotateCanvas.SetActive(false);
 
+    }
+
+    public void SellButton()
+    {
+        costss = clickedTower.GetComponent<Towers>().costs;
+        costss /= 2;
+        GameObject.Find("shopcontroller").GetComponent<ShopController>().money += costss;
+        Destroy(clickedTower);
+        Instantiate(sign, raycastHitPostion, Quaternion.identity);
+        rotateCanvas.SetActive(false);
     }
 }

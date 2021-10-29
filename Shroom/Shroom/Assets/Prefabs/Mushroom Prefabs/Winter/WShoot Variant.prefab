@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 182425657364773757, guid: d19697ad0e9139f49ad9bb05fdcd1850, type: 3}
       propertyPath: m_Name
-      value: WShoot
+      value: WShoot Variant
       objectReference: {fileID: 0}
     - target: {fileID: 182425657364773757, guid: d19697ad0e9139f49ad9bb05fdcd1850, type: 3}
       propertyPath: m_IsActive
@@ -19,6 +19,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e4f6d7a4ec84f324f939985e5e5aa947, type: 2}
+    - target: {fileID: 3160648877195653029, guid: d19697ad0e9139f49ad9bb05fdcd1850, type: 3}
+      propertyPath: animationController
+      value: 
+      objectReference: {fileID: 2398492311533592587}
     - target: {fileID: 3350758686202894507, guid: d19697ad0e9139f49ad9bb05fdcd1850, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -77,3 +81,8 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 46a3d96d140a3a244a7bc847b232cd74, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19697ad0e9139f49ad9bb05fdcd1850, type: 3}
+--- !u!95 &2398492311533592587 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1356725722363509067, guid: d19697ad0e9139f49ad9bb05fdcd1850, type: 3}
+  m_PrefabInstance: {fileID: 3719171574325811520}
+  m_PrefabAsset: {fileID: 0}

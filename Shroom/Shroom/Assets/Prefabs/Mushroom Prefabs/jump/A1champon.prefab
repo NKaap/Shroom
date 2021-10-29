@@ -189,7 +189,6 @@ GameObject:
   - component: {fileID: 5519553575141572670}
   - component: {fileID: 5519553575141572668}
   - component: {fileID: 5519553575141572671}
-  - component: {fileID: -4739197621401152286}
   m_Layer: 0
   m_Name: A1champon
   m_TagString: Tower
@@ -266,23 +265,8 @@ MonoBehaviour:
   dmgToDo: 10
   costs: 25
   isAttacking: 0
-  particle: {fileID: 4336416475652398199, guid: 7861e0a4376c2ec4eb5a5a55c8a46a60, type: 3}
+  particle: {fileID: 3635512147366987481, guid: 0b0d1b769b668c943aa283a56bfd63ca, type: 3}
   enemies: []
---- !u!114 &-4739197621401152286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4636470565431228655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 831e4ba2db237bf429b8caac716fe61b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpHealth: 0
-  jumpDamage: 0
-  jumpCosts: 25
 --- !u!1 &6071246385566916068
 GameObject:
   m_ObjectHideFlags: 0

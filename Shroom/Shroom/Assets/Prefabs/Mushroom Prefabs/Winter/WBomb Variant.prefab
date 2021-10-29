@@ -7,9 +7,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2067330109766326634, guid: 7da54cda241b7274a86357d096082aad, type: 3}
+      propertyPath: costs
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3950583510269134509, guid: 7da54cda241b7274a86357d096082aad, type: 3}
       propertyPath: m_Name
-      value: WBomb
+      value: WBomb Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3950583510269134509, guid: 7da54cda241b7274a86357d096082aad, type: 3}
       propertyPath: m_IsActive
@@ -19,6 +23,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3782701da29d3c74b8b4cab3eb3f01e3, type: 2}
+    - target: {fileID: 4757537633787004171, guid: 7da54cda241b7274a86357d096082aad, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4757537633787004171, guid: 7da54cda241b7274a86357d096082aad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

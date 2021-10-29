@@ -47,11 +47,11 @@ MonoBehaviour:
   animationController: {fileID: 2909501945112316125}
   maxHealth: 100
   currentHealth: 0
-  attackCoolDown: 0
-  dmgToDo: 0
-  costs: 0
+  attackCoolDown: 2.083
+  dmgToDo: 10
+  costs: 25
   isAttacking: 0
-  particle: {fileID: 0}
+  particle: {fileID: 4336416475652398199, guid: 7861e0a4376c2ec4eb5a5a55c8a46a60, type: 3}
   enemies: []
 --- !u!65 &7946624361350321210
 BoxCollider:
@@ -66,7 +66,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 10, z: 10}
   m_Center: {x: 0, y: 4.6, z: 0}
---- !u!114 &1873110711406594976
+--- !u!114 &4980536344040761568
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -78,14 +78,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8161803e68db143b4193d8fbd5a6b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationController: {fileID: 2556106610056949365}
+  animationController: {fileID: 2909501945112316125}
   maxHealth: 100
   currentHealth: 0
-  attackCoolDown: 0
-  dmgToDo: 0
-  costs: 0
+  attackCoolDown: 2.083
+  dmgToDo: 10
+  costs: 25
   isAttacking: 0
-  particle: {fileID: 0}
+  particle: {fileID: 4336416475652398199, guid: 7861e0a4376c2ec4eb5a5a55c8a46a60, type: 3}
   enemies: []
 --- !u!1001 &6042997704645775840
 PrefabInstance:
@@ -160,7 +160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8916470853174365118, guid: 75aebe18acb76d64181e910999c89af7, type: 3}
       propertyPath: m_Name
-      value: WChampignon
+      value: WChampignon Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8916470853174365118, guid: 75aebe18acb76d64181e910999c89af7, type: 3}
       propertyPath: m_IsActive
